@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ewan1</title>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+</head>
+<body>
+<div style="display: flex;height: 100vh;width: 100vw; margin: 0">
+
+	<div style="flex: 1;background: #ffbb5c;display: flex;align-items: left;justify-content: left;">
+	<div id="ewan" onclick="togglemenu(this)" style="width: 60px;margin: 20px; cursor: pointer;z-index: 1001;height: 60px">
+<div class="bar" style="height:8px;background:#d6860b;margin:6px;"></div>
+<div class="bar" style="height:8px;background:#d6860b;margin:6px;"></div>
+<div class="bar" style="height:8px;background:#d6860b;margin:6px;"></div>
+</div>
+
+
+
+<div style="align-items: left;margin-top: 100px;width: 700px">
+<h1 style="font-size: 95px;margin: 0px;color: #d6860b;font-family: 'Inter', sans-serif;">Mango</h1>
+<h1 style="font-size: 95px;margin: 0px;color: #d6860b;font-family: 'Inter', sans-serif;">Graham Shake</h1>
+<p style="font-size: 40px;margin: 0px;color: #d6860b;font-family: 'Inter', sans-serif;">Our Signature Delight</p>
+<br>
+<br>
+<br>
+<p style="font-size: 35px;margin: 0px">Enjoy the rich, creamy taste of our</p>
+<p style="font-size: 35px;margin: 0px">Mango Graham Shake - the perfect</p>
+<p style="font-size: 35px;margin: 0px">balance of sweet mango and graham</p>
+<p style="font-size: 35px;margin: 0px">goodness. Other flavors are available too,</p>
+<p style="font-size: 35px;margin: 0px">but our signature Mango Graham Shake</p>
+<p style="font-size: 35px;margin: 0px">remains the star!</p>
+<br>
+<div style="display:flex; gap:16px;">
+  <button style="font-size:22px;font-weight:600;padding:14px 28px;border-radius:10px;border:none;cursor:pointer;background-color:#E67E22;color:#ffffff;">Order Now
+  </button>
+
+  <button style="font-size:22px;font-weight:600;padding:14px 28px;border-radius:10px;cursor:pointer;background-color:#ffffff;color:#E67E22;border:2px solid #E67E22;">Menu
+  </button>
+</div>
+
+
+</div>
+        </div>
+        <div style="flex: 1;background: linear-gradient(to right, rgba(255, 187, 92, 1) 0%, rgba(255,255,255,0) 45%), url('mango0.png');background-size: cover;background-position: center;display: flex;align-items: right;justify-content: right;">
+	<img src="name.png" width="128px" height="128px" style="float: right;margin-right: 1px;">
+</div>
+</div>
+</div>
+
+<div id="menu" style="position: fixed;top: 0;left: -250px;width: 250px;height: 100%;background: #d6860b;padding-top: 60px; transition: left 0.3s ease;">
+<br>
+<br><b>
+    <a href="home.html" style="font-size: 30px;display: block;padding: 15px 20px;color: #ffbb5c;text-decoration: none;font-family: 'Inter', sans-serif;">Home</a>
+    <a href="products.html" style="font-size: 30px;display: block;padding: 15px 20px;color: #ffbb5c;text-decoration: none;font-family: 'Inter', sans-serif;">Products</a>
+    <a href="contacts.html" style="font-size: 30px;display: block;padding: 15px 20px;color: #ffbb5c;text-decoration: none;font-family: 'Inter', sans-serif;">Contacts</a>
+    <a href="#" style="font-size: 30px;display: block;padding: 15px 20px;color: #ffbb5c;text-decoration: none;font-family: 'Inter', sans-serif;">About Us</a>
+</b>
+</div>
+
+<script>
+function togglemenu(button) {
+    const menu = document.getElementById("menu");
+    // Find the bars inside this specific button
+    const bars = button.querySelectorAll(".bar");
+
+    if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+        bars.forEach(bar => bar.style.background = "#d6860b"); // original color
+    } else {
+        menu.style.left = "0px";
+        bars.forEach(bar => bar.style.background = "#ffbb5c"); // new color when open
+    }
+}
+</script>
+</body>
+</html>
