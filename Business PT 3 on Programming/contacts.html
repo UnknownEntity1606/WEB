@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Surf Twins Essaouira</title>
+</head>
+<body style="margin:0; font-family:Arial, Helvetica, sans-serif; background-color:#ffbb5c; color:#333;">
+<div style="position:relative; width:80px; background:#ffbb5c; z-index:10;">
+
+        <!-- Hamburger (always on top) -->
+        <div onclick="togglemenu()" style="width:40px; margin:20px auto; cursor:pointer; position:relative; z-index:15;">
+            <div class="bar" style="height:6px; background: #d6860b; margin:6px 0; transition: background 0.3s;"></div>
+            <div class="bar" style="height:6px; background: #d6860b; margin:6px 0; transition: background 0.3s;"></div>
+            <div class="bar" style="height:6px; background: #d6860b; margin:6px 0; transition: background 0.3s;"></div>
+        </div>
+
+        <!-- Sliding Menu -->
+        <div id="menu" style="position: fixed;top: 0;left: -250px;width: 250px;height: 100%;background: #d6860b;padding-top: 60px; transition: left 0.3s ease;">
+<br>
+<br><b>
+    <a href="index.html" style="font-size: 30px;display: block;padding: 15px 20px;color: #ffbb5c;text-decoration: none;font-family: 'Inter', sans-serif;">Home</a>
+    <a href="products.html" style="font-size: 30px;display: block;padding: 15px 20px;color: #ffbb5c;text-decoration: none;font-family: 'Inter', sans-serif;">Products</a>
+    <a href="contacts.html" style="font-size: 30px;display: block;padding: 15px 20px;color: #ffbb5c;text-decoration: none;font-family: 'Inter', sans-serif;">Contacts</a>
+    <a href="#" style="font-size: 30px;display: block;padding: 15px 20px;color: #ffbb5c;text-decoration: none;font-family: 'Inter', sans-serif;">About Us</a>
+</b>
+</div>
+
+    </div>
+  <!-- Main Container -->
+  <div style="max-width:1100px; margin:40px auto; padding:20px;">
+
+    <!-- Header -->
+    <h1 style="text-align:center; font-size:36px; margin-bottom:10px;">
+      Ready to start Vibing?
+    </h1>
+    <p style="text-align:center; font-size:16px; max-width:700px; margin:0 auto 40px;">
+      Contact us for product inquiries, orders, or wholesale information.
+We’re happy to help with product details, availability, shipping, and custom requests.
+    </p>
+
+    <!-- Content Row -->
+    <div style="display:flex; flex-wrap:wrap; gap:30px;">
+
+      <!-- Contact Form -->
+      <div style="flex:1; min-width:300px; background:#ffffff; padding:25px; border-radius:8px;">
+        <h2 style="margin-bottom:20px;">Fill the form</h2>
+
+        <form>
+          <label style="display:block; margin-bottom:5px;">Name</label>
+          <input type="text" placeholder="Your full name"
+            style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;">
+
+          <label style="display:block; margin-bottom:5px;">Email</label>
+          <input type="email" placeholder="Your email"
+            style="width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:4px;">
+
+          <label style="display:block; margin-bottom:5px;">Other notes</label>
+          <textarea placeholder="Write your message here"
+            style="width:100%; padding:10px; height:120px; border:1px solid #ccc; border-radius:4px; margin-bottom:20px;"></textarea>
+
+          <button type="submit"
+            style="background:#0077b6; color:#fff; padding:12px 20px; border:none; border-radius:4px; font-size:16px; cursor:pointer;">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div style="flex:1; min-width:300px; background:#ffffff; padding:25px; border-radius:8px;">
+        <h2 style="margin-bottom:20px;">Contact us directly</h2>
+
+        <p style="margin-bottom:15px;">
+          📧 <strong>Email</strong><br>
+          <a href="mailto:necioxandria@gmail.com" style="color:#0077b6; text-decoration:none;">
+            necioxandria@gmail.com
+</a><br>
+          <a href="mailto:tomolingjanaron@gmail.com" style="color:#0077b6; text-decoration:none;">
+            tomolingjanaron@gmail.com
+</a><br>
+          <a href="mailto:carlmojales@gmail.com" style="color:#0077b6; text-decoration:none;">
+            carlmojales@gmail.com
+</a><br>
+          <a href="mailto:gobardapeterjames@gmail.com" style="color:#0077b6; text-decoration:none;">
+            gobardapeterjames@gmail.com
+</a><br>
+          <a href="mailto:patajoreven5@gmail.com" style="color:#0077b6; text-decoration:none;">
+            patajoreven5@gmail.com
+          </a>
+        </p>
+
+        <p style="margin-bottom:0;">
+          📘 <strong>Facebook</strong><br>
+          <a href="https://facebook.com/surftwinsessaouira" target="_blank" style="color:#0077b6; text-decoration:none;">
+            /surftwinsessaouira
+          </a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script>
+function togglemenu() {
+    const menu = document.getElementById("menu");
+    const bars = document.querySelectorAll(".bar");
+
+    // Slide panel in/out
+    if (menu.style.left === "0px") {
+        menu.style.left = "-250px";
+        bars.forEach(bar => bar.style.background = "#d6860b"); // default
+    } else {
+        menu.style.left = "0px";
+        bars.forEach(bar => bar.style.background = "#ffbb5c"); // adapt to panel
+    }
+}
+</script>
+</body>
+</html>
